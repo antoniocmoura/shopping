@@ -3,8 +3,7 @@ import express, {Request, Response} from 'express';
 const server = express();
 
 server.get('/', (request: Request, response: Response) => {
-    return response.json({mensagem: 'bem vindo a api'})
-
+    return response.json({mensagem: 'Bem vindo a API'})
 })
 
 server.listen(5000, () => {

@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Shopping API",
   "main": "./dist/index.js",
-  "scripts": {
-    "dev": "ts-node-dev src/index.ts",
+  "scripts": {    
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
   },
   "keywords": [],
   "author": "Antonio Carlos de Moura",
